@@ -78,7 +78,7 @@ async function send(){
       method: "POST",
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify({
-        model: "claude",
+        model: "openai",
         messages: [
           {role:"system", content:"Tu es Ibson AI. Quand tu donnes du code, mets toujours le langage dans ``` ex: ```python ou ```javascript ou ```html."},
           {role:"user", content: text}
